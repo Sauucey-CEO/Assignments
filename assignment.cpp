@@ -118,7 +118,7 @@ double getSingularCircularAvg(SingularNode* head) {
         sum += P->value;
         count++;
         P = P->next;
-    } while (P->next != head);
+    } while (P != head);
     
     return sum / count;
 }
@@ -133,7 +133,7 @@ double getDoubleCircularAvg(DoubleNode* head) {
         sum += P->value;
         count++;
         P = P->next;
-    } while (P->next != head);
+    } while (P != head);
 
     return sum / count;
 }
